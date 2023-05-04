@@ -23,5 +23,4 @@ public class InvoiceProduct extends BaseEntity{
     private Invoice invoice; // it gives error now since invoice entity does not have @Entity (looks commented)
     @ManyToOne(fetch = FetchType.LAZY)
     private Product product;
-
 }

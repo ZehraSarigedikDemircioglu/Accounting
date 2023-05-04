@@ -4,12 +4,14 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.Entity;
 
 @Getter
 @Setter
 @NoArgsConstructor
-public class State extends BaseEntity{
+@Entity
+public class Role extends BaseEntity {
 
-    private String stateCode;
-    private String stateName;
+    private String name;
+
 }

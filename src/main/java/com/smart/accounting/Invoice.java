@@ -18,6 +18,6 @@ public class Invoice extends BaseEntity{
     private LocalDate invoice_date;
 
     private String invoice_type;
-    @OneToMany
-    List<Client> client;
+   /* @OneToMany
+    List<Client> client;*/
 }

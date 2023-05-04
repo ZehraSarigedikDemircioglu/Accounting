@@ -10,7 +10,7 @@ import javax.persistence.Entity;
 @Data
 @Getter
 @Setter
-//@Entity
+@Entity
 public class Address extends BaseEntity{
 
     private String description;

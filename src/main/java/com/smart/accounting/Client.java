@@ -10,7 +10,7 @@ import java.util.Set;
 @Data
 @Getter
 @Setter
-//@Entity
+@Entity
 public class Client extends BaseEntity {
 
     private String clientName;

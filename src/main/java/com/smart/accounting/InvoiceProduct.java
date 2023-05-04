@@ -5,11 +5,13 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @Entity
+@Table(name = "invoice_product")
 public class InvoiceProduct extends BaseEntity{
 
     private Double profit;

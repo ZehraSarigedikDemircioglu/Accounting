@@ -24,7 +24,7 @@ public class Product extends BaseEntity {
 
     private String name;
     private BigDecimal price;
-   /* @ManyToOne(fetch = FetchType.LAZY)
-    private Category category;*/
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Category category;
 
 }

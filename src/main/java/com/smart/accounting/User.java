@@ -23,7 +23,7 @@ public class User extends BaseEntity {
     private String lastname;
     private String password;
 
-  /*  @ManyToOne
-    private Role role;*/
+    @ManyToOne
+    private Role role;
 
 }

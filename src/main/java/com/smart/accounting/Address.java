@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 
 
 @Data
@@ -16,9 +17,8 @@ public class Address extends BaseEntity{
     private String description;
     private String zip_code;
 
-    /*
+    @ManyToOne
     private State state;
 
-     */
 
 }

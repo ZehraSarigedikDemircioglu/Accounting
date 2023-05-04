@@ -11,7 +11,6 @@ import javax.persistence.Table;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name = "invoice_product")
 public class InvoiceProduct extends BaseEntity{
 
     private Double profit;

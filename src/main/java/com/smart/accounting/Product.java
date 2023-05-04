@@ -12,7 +12,6 @@ import javax.persistence.Table;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name = "product")
 public class Product extends BaseEntity {
 
     private String name;

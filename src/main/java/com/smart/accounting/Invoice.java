@@ -13,12 +13,13 @@ import java.util.List;
 @Table(name = "invoice")
 public class Invoice extends BaseEntity{
 
-    private Integer invoice_number;
-    @Column(name = "DATE")
-    private LocalDate invoice_date;
+    private String invoiceNumber;
 
-    private String invoice_type;
+    private LocalDate invoiceDate;
 
-    @OneToMany
-    List<Client> client;
+    private String invoiceType;
+
+    @ManyToOne
+    @JoinColumn(name = "client_id")
+    private Client client;
 }

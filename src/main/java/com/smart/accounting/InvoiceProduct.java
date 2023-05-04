@@ -20,8 +20,8 @@ public class InvoiceProduct extends BaseEntity{
 
     private BigDecimal profit;
     private Integer quantity;
-    @ManyToOne(fetch = FetchType.LAZY)
+  /*  @ManyToOne(fetch = FetchType.LAZY)
     private Invoice invoice; // it gives error now since invoice entity does not have @Entity (looks commented)
     @ManyToOne(fetch = FetchType.LAZY)
-    private Product product;
+    private Product product;*/
 }

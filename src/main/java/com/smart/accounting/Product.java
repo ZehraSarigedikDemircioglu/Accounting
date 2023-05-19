@@ -19,7 +19,7 @@ import java.math.BigDecimal;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name = "product")
+//@Table(name = "product")
 public class Product extends BaseEntity {
 
     private String name;

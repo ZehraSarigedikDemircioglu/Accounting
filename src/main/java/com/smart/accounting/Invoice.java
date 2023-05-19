@@ -10,7 +10,7 @@ import java.util.List;
 @Setter
 @Getter
 @Entity
-@Table(name = "invoice")
+//@Table(name = "invoice")
 public class Invoice extends BaseEntity{
 
     private String invoiceNumber;
@@ -20,6 +20,6 @@ public class Invoice extends BaseEntity{
     private String invoiceType;
 
     @ManyToOne
-    @JoinColumn(name = "client_id")
+    //@JoinColumn(name = "client_id")
     private Client client;
 }

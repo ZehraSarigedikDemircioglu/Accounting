@@ -12,7 +12,7 @@ import java.math.BigDecimal;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name = "invoice_product")
+//@Table(name = "invoice_product")
 public class InvoiceProduct extends BaseEntity{
 
     private BigDecimal profit;
@@ -20,10 +20,10 @@ public class InvoiceProduct extends BaseEntity{
 
 
     @ManyToOne
-    @JoinColumn(name = "invoice_id")
+    //@JoinColumn(name = "invoice_id")
     private Invoice invoice; // it gives error now since invoice entity does not have @Entity (looks commented)
 
     @ManyToOne
-    @JoinColumn(name = "product_id")
+   // @JoinColumn(name = "product_id")
     private Product product;
 }

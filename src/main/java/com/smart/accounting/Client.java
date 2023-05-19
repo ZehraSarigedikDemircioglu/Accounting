@@ -20,6 +20,6 @@ public class Client extends BaseEntity {
     private String phone;
 
     @ManyToOne
-    @JoinColumn(name = "address_id")
+   // @JoinColumn(name = "address_id")
     private Address address;
 }
